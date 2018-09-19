@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{449C373F-42F8-4AA6-8A2F-53515A658B7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FoCsLibary</RootNamespace>
+    <AssemblyName>FoCsLibary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\2018.2.4f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files\Unity\2018.2.4f1\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Attributes\ConditionalHideAttribute.cs" />
+    <Compile Include="Attributes\ContextMenuLayoutAttribute.cs" />
+    <Compile Include="Attributes\DisableEditingAttribute.cs" />
+    <Compile Include="Attributes\EnumFlagsAttribute.cs" />
+    <Compile Include="Attributes\GetSetterAttribute.cs" />
+    <Compile Include="Attributes\InLineAttributes.cs" />
+    <Compile Include="Attributes\NoFoldoutAttribute.cs" />
+    <Compile Include="Attributes\NoObjectFoldoutAttribute.cs" />
+    <Compile Include="Attributes\RegexStringAttribute.cs" />
+    <Compile Include="Attributes\ShowAsComponentAttribute.cs" />
+    <Compile Include="Components\Base\FoCsBehaviour.cs" />
+    <Compile Include="Components\Base\FoCsRigidbodyBehaviour.cs" />
+    <Compile Include="Components\Base\HiddenClasses\FoCsInternalBehaviour.cs" />
+    <Compile Include="Components\Camera\Effects\CameraEffectBase.cs" />
+    <Compile Include="Components\Camera\Effects\LowerResolutionEffect.cs" />
+    <Compile Include="Components\Camera\TurnOnDepthBuffer.cs" />
+    <Compile Include="Components\DestroyAfterTime.cs" />
+    <Compile Include="Components\DisableAfterTime.cs" />
+    <Compile Include="Components\Generics\Singleton.cs" />
+    <Compile Include="Components\Generics\Singleton2D.cs" />
+    <Compile Include="Components\Generics\Singleton2DRigidbody.cs" />
+    <Compile Include="Components\Generics\SingletonNoCreate.cs" />
+    <Compile Include="Components\Generics\SingletonRigidbody.cs" />
+    <Compile Include="Components\IKControl.cs" />
+    <Compile Include="Components\InitWithComponent.cs" />
+    <Compile Include="Components\Linker\ComponentLinker.cs" />
+    <Compile Include="Components\Linker\GameObjectLinker.cs" />
+    <Compile Include="Components\Linker\GameobjectLinkerExt.cs" />
+    <Compile Include="Components\Linker\RigidbodyLinker.cs" />
+    <Compile Include="Components\OnCollision2DEvents.cs" />
+    <Compile Include="Components\OnCollisionEvents.cs" />
+    <Compile Include="Components\OnTrigger2DEvents.cs" />
+    <Compile Include="Components\OnTriggerEvents.cs" />
+    <Compile Include="Components\SetParent.cs" />
+    <Compile Include="Components\SimpleSceneLoader.cs" />
+    <Compile Include="Components\SimpleTimedScene.cs" />
+    <Compile Include="Components\SimpleTurntableRotate.cs" />
+    <Compile Include="Components\Syncs\GameObjectStateEvents.cs" />
+    <Compile Include="Components\Syncs\SyncGameObjectActiveState.cs" />
+    <Compile Include="Debugging\FoCsDebug.cs" />
+    <Compile Include="Extensions\ActionExtensions.cs" />
+    <Compile Include="Extensions\ArraysExtensions.cs" />
+    <Compile Include="Extensions\Bounds2DExtensions.cs" />
+    <Compile Include="Extensions\ComponentExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\FloatExtensions.cs" />
+    <Compile Include="Extensions\GameObjectExtensions.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Extensions\MethodInfoUtilExtensions.cs" />
+    <Compile Include="Extensions\QueueExtensions.cs" />
+    <Compile Include="Extensions\RectExtensions.cs" />
+    <Compile Include="Extensions\Rigidbody2DExtension.cs" />
+    <Compile Include="Extensions\RigidbodyExtension.cs" />
+    <Compile Include="Extensions\RotateAroundPivotExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TransformExtensions.cs" />
+    <Compile Include="Extensions\UnityClassExtensions.cs" />
+    <Compile Include="Extensions\UnityEventsExtensions.cs" />
+    <Compile Include="Extensions\UnityGUIExtensions.cs" />
+    <Compile Include="Extensions\Vector2Extensions.cs" />
+    <Compile Include="Extensions\Vector3Extensions.cs" />
+    <Compile Include="FoCsUI\Button\FoCsButton.cs" />
+    <Compile Include="FoCsUI\Button\FoCsButtonClickEvent.cs" />
+    <Compile Include="FoCsUI\Button\FoCsButtonClickEventTmp.cs" />
+    <Compile Include="FoCsUI\DropDownEvent.cs" />
+    <Compile Include="FoCsUI\Image\FoCsImage.cs" />
+    <Compile Include="FoCsUI\Image\FoCsImageEvent.cs" />
+    <Compile Include="FoCsUI\Image\FoCsImageEventTmp.cs" />
+    <Compile Include="FoCsUI\InputField\FoCsInputField.cs" />
+    <Compile Include="FoCsUI\InputField\FoCsInputFieldEvent.cs" />
+    <Compile Include="FoCsUI\InputField\FoCsInputFieldEventTmp.cs" />
+    <Compile Include="FoCsUI\ScrollbarEvents.cs" />
+    <Compile Include="FoCsUI\Text\FoCsText.cs" />
+    <Compile Include="FoCsUI\Text\FoCsTextEvent.cs" />
+    <Compile Include="FoCsUI\Text\FoCsTextEventTmp.cs" />
+    <Compile Include="FoCsUI\Toggle\FoCsToggle.cs" />
+    <Compile Include="FoCsUI\Toggle\FoCsToggleClickEvent.cs" />
+    <Compile Include="Grid\GridPosition.cs" />
+    <Compile Include="Grid\GridUtilities.cs" />
+    <Compile Include="Grid\Neighbours.cs" />
+    <Compile Include="IO\SimpleIO.cs" />
+    <Compile Include="Maths\Colours.cs" />
+    <Compile Include="Maths\Curves\TransformData\Component\ITDCurveComponent.cs" />
+    <Compile Include="Maths\Curves\TransformData\Component\TDCurve2PointsBehaviour.cs" />
+    <Compile Include="Maths\Curves\TransformData\Component\TDCurve3PointsBehaviour.cs" />
+    <Compile Include="Maths\Curves\TransformData\Component\TDCurve4PointsBehaviour.cs" />
+    <Compile Include="Maths\Curves\TransformData\Component\TDCurveBehaviour.cs" />
+    <Compile Include="Maths\Curves\TransformData\ITDCurve.cs" />
+    <Compile Include="Maths\Curves\TransformData\TDCurve.cs" />
+    <Compile Include="Maths\Curves\TransformData\TDCurve2Points.cs" />
+    <Compile Include="Maths\Curves\TransformData\TDCurve3Points.cs" />
+    <Compile Include="Maths\Curves\TransformData\TDCurve4Points.cs" />
+    <Compile Include="Maths\Curves\Vector3D\Component\IV3CurveComponent.cs" />
+    <Compile Include="Maths\Curves\Vector3D\Component\V3Curve3PointsBehaviour.cs" />
+    <Compile Include="Maths\Curves\Vector3D\Component\V3Curve4PointsBehaviour.cs" />
+    <Compile Include="Maths\Curves\Vector3D\Component\V3CurveBehaviour.cs" />
+    <Compile Include="Maths\Curves\Vector3D\IV3Curve.cs" />
+    <Compile Include="Maths\Curves\Vector3D\V3Curve.cs" />
+    <Compile Include="Maths\Curves\Vector3D\V3Curve3Points.cs" />
+    <Compile Include="Maths\Curves\Vector3D\V3Curve4Points.cs" />
+    <Compile Include="Maths\Lerp\Lerp.cs" />
+    <Compile Include="Maths\Lerp\QuaternionLerp.cs" />
+    <Compile Include="Maths\Lerp\TransformDataLerp.cs" />
+    <Compile Include="Maths\Lerp\Vector3Lerp.cs" />
+    <Compile Include="Maths\MiscMaths.cs" />
+    <Compile Include="Maths\Noise.cs" />
+    <Compile Include="Maths\Random\RandomArray.cs" />
+    <Compile Include="Maths\Random\RandomBools.cs" />
+    <Compile Include="Maths\Random\RandomIEnumerable.cs" />
+    <Compile Include="Maths\Random\RandomList.cs" />
+    <Compile Include="Maths\Random\RandomMaster.cs" />
+    <Compile Include="Maths\Random\RandomStrings.cs" />
+    <Compile Include="Maths\VectorAngles.cs" />
+    <Compile Include="Maths\VectorMaths.cs" />
+    <Compile Include="ScreenShot\Args\ScreenShotArgs.cs" />
+    <Compile Include="ScreenShot\Args\TimelapseArgs.cs" />
+    <Compile Include="ScreenShot\ScreenCap.cs" />
+    <Compile Include="ScreenShot\Timelapse.cs" />
+    <Compile Include="Types\AnimatorKey.cs" />
+    <Compile Include="Types\Colour.cs" />
+    <Compile Include="Types\InputAxis.cs" />
+    <Compile Include="Types\TransformData.cs" />
+    <Compile Include="Types\TransformDataLerpSettings.cs" />
+    <Compile Include="Types\TypeWithNameAndData.cs" />
+    <Compile Include="Types\Vector2I.cs" />
+    <Compile Include="Types\Vector3I.cs" />
+    <Compile Include="Types\Vector4I.cs" />
+    <Compile Include="Utilities\ActionOnDispose.cs" />
+    <Compile Include="Utilities\Enums\Direction_FB.cs" />
+    <Compile Include="Utilities\Enums\Direction_LR.cs" />
+    <Compile Include="Utilities\Enums\Direction_NSEW.cs" />
+    <Compile Include="Utilities\Enums\Direction_UD.cs" />
+    <Compile Include="Utilities\Enums\Direction_UPLRFB.cs" />
+    <Compile Include="Utilities\Enums\Direction_URDL.cs" />
+    <Compile Include="Utilities\Enums\UnityTriggerTimes.cs" />
+    <Compile Include="Utilities\FileAndPathHelpers.cs" />
+    <Compile Include="Utilities\FoCsAssetFinder.cs" />
+    <Compile Include="Utilities\FoCsStrings.cs" />
+    <Compile Include="Utilities\GameSpeed.cs" />
+    <Compile Include="Utilities\IJson.cs" />
+    <Compile Include="Utilities\Pair.cs" />
+    <Compile Include="Utilities\PrimitiveHelper.cs" />
+    <Compile Include="Utilities\RectEdit.cs" />
+    <Compile Include="Utilities\ReflectionUtilities.cs" />
+    <Compile Include="Utilities\TextureUtilities.cs" />
+    <Compile Include="Utilities\VectorUtilities.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

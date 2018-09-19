@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A24C6CD3-AD51-46AF-A3C4-B9132DA1BE3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FoCsLibaryEditor</RootNamespace>
+    <AssemblyName>FoCsLibaryEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\2018.2.4f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\2018.2.4f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files\Unity\2018.2.4f1\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\ConditionalHideDrawer.cs" />
+    <Compile Include="Attributes\DisableEditingAttributeDrawer.cs" />
+    <Compile Include="Attributes\EnumFlagsAttributeDrawer.cs" />
+    <Compile Include="Attributes\GetSetterAttributeDrawer.cs" />
+    <Compile Include="Attributes\MultiInLineAttributeDrawer.cs" />
+    <Compile Include="Attributes\NoFoldoutAttributeDrawer.cs" />
+    <Compile Include="Attributes\RangeAttributeDrawer.cs" />
+    <Compile Include="Attributes\RegexStringDrawerWithAttribute.cs" />
+    <Compile Include="Debugging\FoCsDebugWindow.cs" />
+    <Compile Include="FoCsUI\ButtonClickEventDrawer.cs" />
+    <Compile Include="Maths\Curves\TransformData\Editor\TDCurveEditor.cs" />
+    <Compile Include="Maths\Curves\TransformData\Editor\TDCurvePropertyDrawer.cs" />
+    <Compile Include="Maths\Curves\Vector3D\Editor\V3DCurveEditor.cs" />
+    <Compile Include="Maths\Curves\Vector3D\Editor\V3DCurvePropertyDrawer.cs" />
+    <Compile Include="PropertyDrawers\AnimatorKeyDrawer.cs" />
+    <Compile Include="PropertyDrawers\GridPositionPropertyDrawer.cs" />
+    <Compile Include="PropertyDrawers\InputAxisPropertyDrawer.cs" />
+    <Compile Include="PropertyDrawers\TransformDataDrawer.cs" />
+    <Compile Include="ScreenShot\ScreenCapWindow.cs" />
+    <Compile Include="ScreenShot\ScreenshotTab.cs" />
+    <Compile Include="ScreenShot\TimelapseTab.cs" />
+    <Compile Include="Utilities\EditorHelpers.cs" />
+    <Compile Include="Editors\ContextMenuData.cs" />
+    <Compile Include="Editors\DefaultPropertyType.cs" />
+    <Compile Include="Editors\FoCsEditor.cs" />
+    <Compile Include="Editors\FoCsEditorUtilities.cs" />
+    <Compile Include="Editors\Handlers\DefaultScriptPropertyHandler.cs" />
+    <Compile Include="Editors\Handlers\HandlerController.cs" />
+    <Compile Include="Editors\Handlers\IPropertyLayoutHandler.cs" />
+    <Compile Include="Editors\Handlers\ListHandler.cs" />
+    <Compile Include="Editors\Handlers\ObjectReferenceHandler.cs" />
+    <Compile Include="Editors\Handlers\PropertyHandler.cs" />
+    <Compile Include="Editors\Lists\UnityReorderableListProperty.cs" />
+    <Compile Include="Editors\Lists\UnityReorderableListStorage.cs" />
+    <Compile Include="Editors\ObjectReference\ObjectReference.cs" />
+    <Compile Include="Editors\ObjectReference\ObjectReferenceDrawer.cs" />
+    <Compile Include="Editors\Sorters\AlphaSorter.cs" />
+    <Compile Include="Editors\Sorters\InvertedAlphaSorter.cs" />
+    <Compile Include="Editors\Sorters\NormalSorter.cs" />
+    <Compile Include="Editors\Sorters\SearchSorter.cs" />
+    <Compile Include="Editors\TransformEditor.cs" />
+    <Compile Include="IMUI\FoCsGUI.cs" />
+    <Compile Include="IMUI\FoCsGUIEvent.cs" />
+    <Compile Include="IMUI\FoCsGUILayout.cs" />
+    <Compile Include="IMUI\FoCsGUISkin.cs" />
+    <Compile Include="IMUI\FoCsGUISkinRef.cs" />
+    <Compile Include="IMUI\FoCsGUIStyles.cs" />
+    <Compile Include="IMUI\FoCsGUIUtilities.cs" />
+    <Compile Include="Utilities\MenuItems.cs" />
+    <Compile Include="PropertyDrawers\FoCsPropertyDrawerWithAttribute.cs" />
+    <Compile Include="PropertyDrawers\PropertyDrawerUtility.cs" />
+    <Compile Include="PropertyDrawers\QuaternionPropertyDrawer.cs" />
+    <Compile Include="PropertyDrawers\ScriptableObjectDrawer.cs" />
+    <Compile Include="PropertyDrawers\Types\ColourDrawer.cs" />
+    <Compile Include="PropertyDrawers\VectorIPropertyDrawer.cs" />
+    <Compile Include="PropertyDrawers\VectorPropertyDrawer.cs" />
+    <Compile Include="UnitySettings\AdvancedUnitySettingsWindow.cs" />
+    <Compile Include="UnitySettings\InputAxisWindow.cs" />
+    <Compile Include="UnitySettings\ReadInputManager.cs" />
+    <Compile Include="UnitySettings\UnitySettingsReader.cs" />
+    <Compile Include="Utilities\CopyPasteUtility.cs" />
+    <Compile Include="Utilities\Disposables.cs" />
+    <Compile Include="Utilities\Disposable\EditorColorChanger.cs" />
+    <Compile Include="Utilities\Disposable\EditorIndent.cs" />
+    <Compile Include="Utilities\Disposable\EditorWidth.cs" />
+    <Compile Include="Utilities\EditorColour.cs" />
+    <Compile Include="Utilities\EditorEntry.cs" />
+    <Compile Include="Utilities\IRepaintable.cs" />
+    <Compile Include="Utilities\RectLayoutScope\RectHorizontalScope.cs" />
+    <Compile Include="Utilities\RectLayoutScope\RectLayoutScope.cs" />
+    <Compile Include="Utilities\RectLayoutScope\RectVerticalScope.cs" />
+    <Compile Include="Utilities\ScriptGenerators.cs" />
+    <Compile Include="Utilities\SerializedObjectExtensions.cs" />
+    <Compile Include="Utilities\SerializedPropertyExtensions.cs" />
+    <Compile Include="Windows\AdvPopupWindow.cs" />
+    <Compile Include="Windows\BuiltInResourcesWindow.cs" />
+    <Compile Include="Windows\ControlPanel\ControlPanelTabAttribute.cs" />
+    <Compile Include="Windows\ControlPanel\CopyPasteUtilityTab.cs" />
+    <Compile Include="Windows\ControlPanel\FoCsInfoTab.cs" />
+    <Compile Include="Windows\ControlPanel\ReorderableListSettingsTab.cs" />
+    <Compile Include="Windows\FoCsControlPanel.cs" />
+    <Compile Include="Windows\FoCsWindow.cs" />
+    <Compile Include="Windows\FoCsWindowAttribute.cs" />
+    <Compile Include="Windows\ObjectBrowserWindow.cs" />
+    <Compile Include="Windows\Tab.cs" />
+    <Compile Include="Windows\TabedWindow.cs" />
+    <Compile Include="Windows\TextureMaker.cs" />
+    <Compile Include="Windows\VersionNumberWindow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FoCsLibrary\FoCsLibrary.csproj">
+      <Project>{449c373f-42f8-4aa6-8a2f-53515a658b7e}</Project>
+      <Name>FoCsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
