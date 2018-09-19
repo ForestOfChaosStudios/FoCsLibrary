@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96AC9CDB-6FE1-40FC-AE38-E2C3DBDE235B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FoCsAdvVar</RootNamespace>
+    <AssemblyName>FoCsAdvVar</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\2018.2.4f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files\Unity\2018.2.4f1\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\AdvFolderNameAttribute.cs" />
+    <Compile Include="Base\AdvListReference.cs" />
+    <Compile Include="Base\AdvListVariable.cs" />
+    <Compile Include="Base\AdvReference.cs" />
+    <Compile Include="Base\AdvSOFolder.cs" />
+    <Compile Include="Base\AdvVariable.cs" />
+    <Compile Include="Components\SyncBoolReferenceToGameObjectActive.cs" />
+    <Compile Include="Components\SyncGameObjectActiveToBoolReference.cs" />
+    <Compile Include="Components\ToggleBoolReferenceToButtonEvents.cs" />
+    <Compile Include="Events\AdvEvent.cs" />
+    <Compile Include="Events\AdvEventListener.cs" />
+    <Compile Include="FoCsUI\Slider\FoCsSlider.cs" />
+    <Compile Include="FoCsUI\Slider\SliderTextDisplay.cs" />
+    <Compile Include="FoCsUI\Slider\SliderToggle.cs" />
+    <Compile Include="FoCsUI\Slider\SliderToggleGameObjectsActive.cs" />
+    <Compile Include="InputSystem\AdvInputAxis.cs" />
+    <Compile Include="InputSystem\AdvInputManager.cs" />
+    <Compile Include="InputSystem\PlayerInputDirections.cs" />
+    <Compile Include="RunTimeSets\Base\BaseAddToRunTimeSet.cs" />
+    <Compile Include="RunTimeSets\Base\BaseSetRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Base\RunTimeList.cs" />
+    <Compile Include="RunTimeSets\Base\RunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Components\AddToGameObjectRunTimeSet.cs" />
+    <Compile Include="RunTimeSets\Components\AddToRendererRunTimeSet.cs" />
+    <Compile Include="RunTimeSets\Components\AddToTransformRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Components\SetRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Components\SyncComponentActiveWithGameObject.cs" />
+    <Compile Include="RunTimeSets\Types\CameraRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Types\ComponentRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Types\GameObjectRunTimeList.cs" />
+    <Compile Include="RunTimeSets\Types\GameObjectRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Types\MonoBehaviourRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Types\RendererRunTimeList.cs" />
+    <Compile Include="RunTimeSets\Types\RendererRunTimeRef.cs" />
+    <Compile Include="RunTimeSets\Types\TransformRunTimeList.cs" />
+    <Compile Include="RunTimeSets\Types\TransformRunTimeRef.cs" />
+    <Compile Include="Variables\List Types\BoolListReference.cs" />
+    <Compile Include="Variables\List Types\ByteListReference.cs" />
+    <Compile Include="Variables\List Types\ColorListReference.cs" />
+    <Compile Include="Variables\List Types\ColourListReference.cs" />
+    <Compile Include="Variables\List Types\FloatListReference.cs" />
+    <Compile Include="Variables\List Types\GameObjectListReference.cs" />
+    <Compile Include="Variables\List Types\IntListReference.cs" />
+    <Compile Include="Variables\List Types\QuaternionListReference.cs" />
+    <Compile Include="Variables\List Types\StringListReference.cs" />
+    <Compile Include="Variables\List Types\TransformListtReference.cs" />
+    <Compile Include="Variables\List Types\Vector2IListReference.cs" />
+    <Compile Include="Variables\List Types\Vector2IntListReference.cs" />
+    <Compile Include="Variables\List Types\Vector2ListReference.cs" />
+    <Compile Include="Variables\List Types\Vector3IListReference.cs" />
+    <Compile Include="Variables\List Types\Vector3IntListReference.cs" />
+    <Compile Include="Variables\List Types\Vector3ListReference.cs" />
+    <Compile Include="Variables\List Types\Vector4IListReference.cs" />
+    <Compile Include="Variables\List Types\Vector4ListReference.cs" />
+    <Compile Include="Variables\Single Types\AnimatorKeyReference.cs" />
+    <Compile Include="Variables\Single Types\BoolReference.cs" />
+    <Compile Include="Variables\Single Types\ByteReference.cs" />
+    <Compile Include="Variables\Single Types\ColorReference.cs" />
+    <Compile Include="Variables\Single Types\ColourReference.cs" />
+    <Compile Include="Variables\Single Types\FloatReference.cs" />
+    <Compile Include="Variables\Single Types\GameObjectReference.cs" />
+    <Compile Include="Variables\Single Types\IntReference.cs" />
+    <Compile Include="Variables\Single Types\QuaternionReference.cs" />
+    <Compile Include="Variables\Single Types\StringReference.cs" />
+    <Compile Include="Variables\Single Types\TransformReference.cs" />
+    <Compile Include="Variables\Single Types\Vector2IntReference.cs" />
+    <Compile Include="Variables\Single Types\Vector2IReference.cs" />
+    <Compile Include="Variables\Single Types\Vector2Reference.cs" />
+    <Compile Include="Variables\Single Types\Vector3IntReference.cs" />
+    <Compile Include="Variables\Single Types\Vector3IReference.cs" />
+    <Compile Include="Variables\Single Types\Vector3Reference.cs" />
+    <Compile Include="Variables\Single Types\Vector4IReference.cs" />
+    <Compile Include="Variables\Single Types\Vector4Reference.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FoCsLibrary\FoCsLibrary.csproj">
+      <Project>{449c373f-42f8-4aa6-8a2f-53515a658b7e}</Project>
+      <Name>FoCsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
