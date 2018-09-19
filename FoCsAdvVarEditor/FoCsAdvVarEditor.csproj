@@ -46,21 +46,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdvEventEditor.cs" />
-    <Compile Include="AdvFolderEditor.cs" />
-    <Compile Include="AdvFolderPropertyDrawer.cs" />
-    <Compile Include="AdvReferencePropertyDrawerBase.cs" />
-    <Compile Include="Attributes\AdvCustomRangeDrawer.cs" />
-    <Compile Include="InputSystem\AdvInputMenuItems.cs" />
-    <Compile Include="InputSystem\AdvInputManagerWindow.cs" />
+    <Compile Include="Editor\AdvEventEditor.cs" />
+    <Compile Include="Editor\AdvFolderEditor.cs" />
+    <Compile Include="Editor\AdvFolderPropertyDrawer.cs" />
+    <Compile Include="Editor\AdvReferencePropertyDrawerBase.cs" />
+    <Compile Include="Editor\Attributes\AdvCustomRangeDrawer.cs" />
+    <Compile Include="Editor\InputSystem\AdvInputMenuItems.cs" />
+    <Compile Include="Editor\InputSystem\AdvInputManagerWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RunTimeSets\Editor\RuntimeListEditor.cs" />
-    <Compile Include="RunTimeSets\Editor\RuntimeListPropertyDrawer.cs" />
-    <Compile Include="RunTimeSets\Editor\RuntimeRefEditor.cs" />
-    <Compile Include="RunTimeSets\Editor\RuntimeRefPropertyDrawer.cs" />
-    <Compile Include="SubmitStringWindow.cs" />
-    <Compile Include="Variables\Single Types\Editor\AnimatorKeyEditor.cs" />
-    <Compile Include="Variables\Single Types\Editor\StringReferenceEditor.cs" />
+    <Compile Include="Editor\RunTimeSets\Editor\RuntimeListEditor.cs" />
+    <Compile Include="Editor\RunTimeSets\Editor\RuntimeListPropertyDrawer.cs" />
+    <Compile Include="Editor\RunTimeSets\Editor\RuntimeRefEditor.cs" />
+    <Compile Include="Editor\RunTimeSets\Editor\RuntimeRefPropertyDrawer.cs" />
+    <Compile Include="Editor\SubmitStringWindow.cs" />
+    <Compile Include="Editor\Variables\Single Types\Editor\AnimatorKeyEditor.cs" />
+    <Compile Include="Editor\Variables\Single Types\Editor\StringReferenceEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FoCsAdvVar\FoCsAdvVar.csproj">

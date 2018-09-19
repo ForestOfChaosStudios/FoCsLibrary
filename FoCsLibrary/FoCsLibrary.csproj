@@ -7,8 +7,8 @@
     <ProjectGuid>{449C373F-42F8-4AA6-8A2F-53515A658B7E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FoCsLibary</RootNamespace>
-    <AssemblyName>FoCsLibary</AssemblyName>
+    <RootNamespace>FoCsLibrary</RootNamespace>
+    <AssemblyName>FoCsLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -169,6 +169,7 @@
     <Compile Include="Types\AnimatorKey.cs" />
     <Compile Include="Types\Colour.cs" />
     <Compile Include="Types\InputAxis.cs" />
+    <Compile Include="Types\PlayerInputDirections.cs" />
     <Compile Include="Types\TransformData.cs" />
     <Compile Include="Types\TransformDataLerpSettings.cs" />
     <Compile Include="Types\TypeWithNameAndData.cs" />

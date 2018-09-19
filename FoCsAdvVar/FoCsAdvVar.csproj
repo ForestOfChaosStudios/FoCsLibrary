@@ -63,7 +63,6 @@
     <Compile Include="FoCsUI\Slider\SliderToggleGameObjectsActive.cs" />
     <Compile Include="InputSystem\AdvInputAxis.cs" />
     <Compile Include="InputSystem\AdvInputManager.cs" />
-    <Compile Include="InputSystem\PlayerInputDirections.cs" />
     <Compile Include="RunTimeSets\Base\BaseAddToRunTimeSet.cs" />
     <Compile Include="RunTimeSets\Base\BaseSetRunTimeRef.cs" />
     <Compile Include="RunTimeSets\Base\RunTimeList.cs" />

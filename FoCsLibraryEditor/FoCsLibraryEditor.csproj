@@ -7,8 +7,8 @@
     <ProjectGuid>{A24C6CD3-AD51-46AF-A3C4-B9132DA1BE3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FoCsLibaryEditor</RootNamespace>
-    <AssemblyName>FoCsLibaryEditor</AssemblyName>
+    <RootNamespace>FoCsLibraryEditor</RootNamespace>
+    <AssemblyName>FoCsLibraryEditor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -123,7 +123,7 @@
     <Compile Include="Utilities\ScriptGenerators.cs" />
     <Compile Include="Utilities\SerializedObjectExtensions.cs" />
     <Compile Include="Utilities\SerializedPropertyExtensions.cs" />
-    <Compile Include="Windows\AdvPopupWindow.cs" />
+    <Compile Include="Windows\FoCsPopupWindow.cs" />
     <Compile Include="Windows\BuiltInResourcesWindow.cs" />
     <Compile Include="Windows\ControlPanel\ControlPanelTabAttribute.cs" />
     <Compile Include="Windows\ControlPanel\CopyPasteUtilityTab.cs" />
